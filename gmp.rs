@@ -19,7 +19,7 @@ use core::str::as_c_str;
 use core::vec;
 
 #[abi = "rust-intrinsic"]
-extern mod rusti {
+extern "rust-intrinsic" mod rusti {
   fn init<T>() -> T;
 }
 
